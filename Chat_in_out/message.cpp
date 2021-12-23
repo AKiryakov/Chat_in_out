@@ -31,3 +31,21 @@ void Message::setRecipient(const string& recipient)
 {
 	_recipient = recipient;
 }
+
+ostream& operator <<(ostream& os, const Message& Message_Vector_Class)
+{
+	os << Message_Vector_Class._message;
+	os << ' ';
+	os << Message_Vector_Class._sender;
+	os << ' ';
+	os << Message_Vector_Class._recipient;
+	return os;
+}
+
+fstream& operator >>(fstream& is, Message& Message_Vector_Class)
+{
+	is >> Message_Vector_Class._message;
+	is >> Message_Vector_Class._sender;
+	is >> Message_Vector_Class._recipient;
+	return is;
+}

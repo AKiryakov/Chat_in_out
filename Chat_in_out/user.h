@@ -1,5 +1,7 @@
 ﻿#pragma once
 #include <string>
+#include <fstream>
+
 using namespace std;
 
 class User
@@ -16,6 +18,9 @@ public:
 	string &getUserName();
 	void setUserPassword(const string& password);
 	string &getUserPassword();
+
+	friend fstream& operator >>(fstream& is, User& Users_Vector_Class);
+	friend ostream& operator <<(ostream& os, const User& Users_Vector_Class);
 
 private:
 	string _login; // переменная с логином

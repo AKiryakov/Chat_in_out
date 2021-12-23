@@ -1,5 +1,6 @@
 ﻿#include <string>
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include <windows.h>
 #include "user.h"
@@ -17,6 +18,48 @@ int main()
     string user_login, user_name, user_password, user_confirm_password, current_message, current_reciption_name, flag_response;// имя текущего пользователя, пароль, подтверждение, текст сообщения, имя получателя сообщения, переменная для определения кому отвечать
     int num, j; // переменные для меню и цикла
     bool authorization, name_free, sent_nosuccessfully, finish_program = true; // для логики факта авторизации, свободного имени в чате, факта отправки сообщения, завершения программы
+
+    fstream message_file = fstream("messages.txt", ios::in | ios::out);
+    message_file = fstream("message.txt", ios::in | ios::out | ios::trunc);
+
+
+
+
+
+
+
+// пока не работает чтение из файла
+
+
+
+    fstream user_file = fstream("users.txt", ios::in | ios::out);
+   // if (!user_file)
+        user_file = fstream("users.txt", ios::in | ios::out | ios::trunc);
+   // if (user_file)
+    //{
+
+      
+   //     user_file.seekg(0, ios_base::beg);
+        // Считываем данные из файла
+        
+
+
+
+// нужен цикл от начала файла и до конца, но как это написать?
+
+  //     while (user_file >> ????? )
+        
+ //       user_file >> Users_Vector_Class.push_back(User(user_login, user_name, user_password)) // Эти переменные  (user_login, user_name, user_password) еще не определены
+
+    
+ //   }
+
+
+
+
+
+
+
     while (finish_program) //бесконечный цикл пока finish_program = true 
     {
         cout << "выберете действие:" << endl;// основное меню
@@ -233,6 +276,23 @@ int main()
         default:
             if ((num > 2) || (num < 1)) // условие выхода из программы
             {
+
+
+                // записываем содержимое вектора юзеров в файл
+
+
+                for (int i = 0; i < Users_Vector_Class.size(); ++i)
+                user_file << Users_Vector_Class[i] << endl;
+
+
+                // записываем содержимое вектора сообщений в файл
+
+                for (int i = 0; i < Message_Vector_Class.size(); ++i)
+                    message_file << Message_Vector_Class[i] << endl;
+
+
+                
+                
                 finish_program = false;
             }
             break;

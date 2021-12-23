@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include <string>
+#include <fstream>
 using namespace std;
 
 class Message
@@ -20,6 +21,9 @@ public:
 
 	void setRecipient(const string& recipient);
 	string getRecipient() const;
+
+	friend fstream& operator >>(fstream& is, Message& Message_Vector_Class);
+	friend ostream& operator <<(ostream& os, const Message& Message_Vector_Class);
 
 
 private:
