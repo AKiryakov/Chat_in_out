@@ -32,20 +32,21 @@ void Message::setRecipient(const string& recipient)
 	_recipient = recipient;
 }
 
-ostream& operator <<(ostream& os, const Message& Message_Vector_Class)
+ostream& operator <<(ostream& os, const Message& m)
 {
-	os << Message_Vector_Class._message;
+	os << m._message << endl;
+	//os << ' ';
+	os << m._sender;
 	os << ' ';
-	os << Message_Vector_Class._sender;
-	os << ' ';
-	os << Message_Vector_Class._recipient;
+	os << m._recipient;
 	return os;
 }
 
-fstream& operator >>(fstream& is, Message& Message_Vector_Class)
+fstream& operator >>(fstream& is, Message& m)
 {
-	is >> Message_Vector_Class._message;
-	is >> Message_Vector_Class._sender;
-	is >> Message_Vector_Class._recipient;
+	getline(is, m._message);
+	is >> m._sender;
+	is >> m._recipient;
+	is.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	return is;
 }

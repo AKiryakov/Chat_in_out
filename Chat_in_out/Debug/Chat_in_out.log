@@ -1,12 +1,8 @@
 ﻿  Chat_in_out.cpp
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(98,35): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(145,31): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(173,39): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(187,39): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(196,43): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(242,55): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(284,35): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(288,35): warning C4018: <: несоответствие типов со знаком и без знака
-  message.cpp
-  Создание кода...
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(76,35): warning C4018: <: несоответствие типов со знаком и без знака
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(123,31): warning C4018: <: несоответствие типов со знаком и без знака
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(151,39): warning C4018: <: несоответствие типов со знаком и без знака
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(165,39): warning C4018: <: несоответствие типов со знаком и без знака
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(174,43): warning C4018: <: несоответствие типов со знаком и без знака
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(220,55): warning C4018: <: несоответствие типов со знаком и без знака
   Chat_in_out.vcxproj -> C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Debug\Chat_in_out.exe

@@ -19,8 +19,8 @@ public:
 	void setUserPassword(const string& password);
 	string &getUserPassword();
 
-	friend fstream& operator >>(fstream& is, User& Users_Vector_Class);
-	friend ostream& operator <<(ostream& os, const User& Users_Vector_Class);
+	friend fstream& operator >>(fstream& is, User& u);
+	friend ostream& operator <<(ostream& os, const User& u);
 
 private:
 	string _login; // переменная с логином

@@ -1,5 +1,4 @@
 ﻿#include <string>
-#include <fstream>
 #include "user.h"
 using namespace std;
 
@@ -33,20 +32,20 @@ void User::setUserPassword(const string& password)
 	_password = password;
 }
 
-ostream& operator <<(ostream& os, const User& Users_Vector_Class)
+ostream& operator <<(ostream& os, const User& u)
 {
-	os << Users_Vector_Class._login;
+	os << u._login;
 	os << ' ';
-	os << Users_Vector_Class._name;
+	os << u._name;
 	os << ' ';
-	os << Users_Vector_Class._password;
+	os << u._password;
 	return os;
 }
 
-fstream& operator >>(fstream& is, User& Users_Vector_Class)
+fstream& operator >>(fstream& is, User& u)
 {
-	is >> Users_Vector_Class._login;
-	is >> Users_Vector_Class._name;
-	is >> Users_Vector_Class._password;
+	is >> u._login;
+	is >> u._name;
+	is >> u._password;
 	return is;
 }

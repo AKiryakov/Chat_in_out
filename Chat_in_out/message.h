@@ -22,8 +22,8 @@ public:
 	void setRecipient(const string& recipient);
 	string getRecipient() const;
 
-	friend fstream& operator >>(fstream& is, Message& Message_Vector_Class);
-	friend ostream& operator <<(ostream& os, const Message& Message_Vector_Class);
+	friend fstream& operator >>(fstream& is, Message& m);
+	friend ostream& operator <<(ostream& os, const Message& m);
 
 
 private:
