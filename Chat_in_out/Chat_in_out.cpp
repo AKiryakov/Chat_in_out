@@ -2,11 +2,13 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <filesystem>
 #include <windows.h>
 #include "user.h"
 #include "message.h"
 #include "exception.h"
 using namespace std;
+namespace fs = std::filesystem;
 
 int main()
 {
@@ -255,7 +257,6 @@ int main()
             if ((num > 2) || (num < 1)) // условие выхода из программы
             {
                 // записываем содержимое вектора юзеров в файл users.txt
-
                 user_file = fstream("users.txt", ios::out | ios::trunc);
                 if (user_file)
                 {
@@ -265,8 +266,10 @@ int main()
                     user_file.close();
                 }
 
-                // записываем содержимое вектора сообщений в файл message.txt
+                // убираем атрибуты доступа к файлу всем, кроме самого пользоваателя:
+                fs::permissions("users.txt", fs::perms::group_all | fs::perms::others_all, fs::perm_options::remove);
 
+                // записываем содержимое вектора сообщений в файл message.txt
                 message_file = fstream("message.txt", ios::out | ios::trunc);
                 if (message_file)
                 {
@@ -275,6 +278,10 @@ int main()
                         message_file << m << endl;
                     message_file.close();
                 }
+
+                // убираем атрибуты доступа к файлу всем, кроме самого пользоваателя:
+                fs::permissions("message.txt", fs::perms::group_all | fs::perms::others_all, fs::perm_options::remove);
+
                 // устанавливаем флаг завершения работы программы                 
                 run_program = false;
             }

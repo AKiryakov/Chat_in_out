@@ -1,8 +1,11 @@
 ﻿  Chat_in_out.cpp
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(76,35): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(123,31): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(151,39): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(165,39): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(174,43): warning C4018: <: несоответствие типов со знаком и без знака
-C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(220,55): warning C4018: <: несоответствие типов со знаком и без знака
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(78,35): warning C4018: <: несоответствие типов со знаком и без знака
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(125,31): warning C4018: <: несоответствие типов со знаком и без знака
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(153,39): warning C4018: <: несоответствие типов со знаком и без знака
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(167,39): warning C4018: <: несоответствие типов со знаком и без знака
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(176,43): warning C4018: <: несоответствие типов со знаком и без знака
+C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Chat_in_out.cpp(222,55): warning C4018: <: несоответствие типов со знаком и без знака
+  message.cpp
+  user.cpp
+  Создание кода...
   Chat_in_out.vcxproj -> C:\CPP\Modul 18.12\in-out\Chat_in_out\Chat_in_out\Debug\Chat_in_out.exe
